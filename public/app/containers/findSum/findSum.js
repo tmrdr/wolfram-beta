@@ -1,15 +1,15 @@
 angular.module('App')
 .component('findSumComp', {
   templateUrl: 'app/containers/findSum/findSum.html',
-  controller: FindSumCtrl,
-  controllerAs: 'findSumCtrl'
+  controller: FindSumCompCtrl,
+  controllerAs: 'findSumComp'
 });
 
-function FindSumCtrl(){
+function FindSumCompCtrl(){
 
   var findSumComp = this;
   findSumComp.phrase = "finding the sums";
 }
 
 
-FindSumCtrl.$inject = [];
+FindSumCompCtrl.$inject = [];

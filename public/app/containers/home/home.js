@@ -1,6 +1,6 @@
 angular.module('App')
 .component('homeComp', {
-  templateUrl: 'app/components/home/home.html',
+  templateUrl: 'app/containers/home/home.html',
   controller: HomeCompCtrl,
   controllerAs: 'homeComp'
 });
