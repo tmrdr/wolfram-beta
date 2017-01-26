@@ -14,7 +14,7 @@ angular.module('App', ['ui.router'])
     .state('homeState', {
       url: '/',
       component: 'homeComp'
-    })
+    });
 
     $locationProvider.html5Mode(true);
 
