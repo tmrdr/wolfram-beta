@@ -1,0 +1,23 @@
+{
+  "name": "angular-hackathon-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tommy-Lim/angular-hackathon-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tommy-Lim/angular-hackathon-practice/issues"
+  },
+  "homepage": "https://github.com/Tommy-Lim/angular-hackathon-practice#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0"
+  }
+}
