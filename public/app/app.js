@@ -14,7 +14,11 @@ angular.module('App', ['ui.router'])
     .state('homeState', {
       url: '/',
       component: 'homeComp'
-    });
+    })
+    .state('findSumState', {
+      url: '/findSum',
+      component: 'findSumComp'
+    })
 
     $locationProvider.html5Mode(true);
 
