@@ -6,7 +6,7 @@ angular.module('App', ['ui.router'])
   function(
     $stateProvider,
     $urlRouterProvider,
-    $locationProvider,
+    $locationProvider
   ){
     $urlRouterProvider.otherwise('/');
 
