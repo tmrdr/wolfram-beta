@@ -8,8 +8,8 @@ angular.module('App')
 function FindSumCompCtrl(){
 
   var findSumComp = this;
-  findSumComp.phrase = "finding the sums";
-  findSumComp.input = " 1 4 5 6 7 8 ";
+  findSumComp.input = null;
+  findSumComp.sum = null;
 
   findSumComp.calculate = function(){
     console.log("hello");
