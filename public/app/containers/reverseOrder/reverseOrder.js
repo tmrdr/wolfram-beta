@@ -12,7 +12,6 @@ function ReverseOrderCompCtrl(){
   reverseOrderComp.input = "hello world";
   reverseOrderComp.str = null;
 
-
   reverseOrderComp.calculate = function(){
     var str = reverseOrderComp.input;
 

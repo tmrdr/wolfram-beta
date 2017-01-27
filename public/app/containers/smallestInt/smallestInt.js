@@ -5,7 +5,7 @@ angular.module('App')
   controllerAs: 'smallestIntComp'
 });
 
-function smallestIntCompCtrl(){
+function smallestIntCompCtrl(DataServices){
   $("input").focus();
 
   var smallestIntComp = this;
@@ -13,20 +13,6 @@ function smallestIntCompCtrl(){
   smallestIntComp.answer = null;
 
   smallestIntComp.calculate = function(){
-
-    var array = smallestIntComp.input.split(" ").map(function(item){
-      return parseInt(item);
-    })
-
-    var newArray = [];
-
-    array.forEach(function(item){
-      if(isNaN(item)){
-        //do nothing
-      } else{
-        newArray.push(item);
-      }
-    })
 
     function smallestInt(array){
       var smallest = array[0];
@@ -39,7 +25,7 @@ function smallestIntCompCtrl(){
     };
 
 
-    smallestIntComp.answer = smallestInt(newArray);
+    smallestIntComp.answer = smallestInt(DataServices.stringToArray(smallestIntComp.input));
   }
 
   smallestIntComp.calculate();
@@ -47,4 +33,4 @@ function smallestIntCompCtrl(){
 }
 
 
-smallestIntCompCtrl.$inject = [];
+smallestIntCompCtrl.$inject = ['DataServices'];

@@ -12,7 +12,6 @@ function ReverseStrCompCtrl(){
   reverseStrComp.input = "hello world";
   reverseStrComp.str = null;
 
-
   reverseStrComp.calculate = function(){
     var str = reverseStrComp.input;
 

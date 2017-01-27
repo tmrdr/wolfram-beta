@@ -9,7 +9,6 @@ function largestIntCompCtrl(DataServices){
   $("input").focus();
 
   var largestIntComp = this;
-
   largestIntComp.input = "4 19 29 0 35";
   largestIntComp.sum = null;
 
