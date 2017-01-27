@@ -36,7 +36,7 @@ body{
 
 .code{
   font-family: 'Source Code Pro', monospace;
-  background-color: lightgrey;
+  background-color: #EEE;
   color: orange;
 }
 
@@ -48,4 +48,22 @@ body{
   .sidenav{
     display: none;
   }
+}
+
+/*calculator*/
+.my-calc .row{
+  padding-bottom: 5px;
+}
+
+.my-calc .display{
+  width: 215px;
+}
+
+.my-calc button{
+  width: 40px;
+  height: 40px;
+}
+
+.selected{
+  border: 3px solid black;
 }

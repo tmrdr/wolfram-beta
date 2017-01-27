@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-2 my-calc">
+      <h2 class="text-center"><span class="code">Calculator</span></h2>
+      <div class="row">
+        <input type="text" class="form-control display center-block text-right" value="{{calculatorComp.calcString}}" readonly>
+      </div>
+      <div class="row text-center">
+        <button class="btn btn-default" ng-click="calculatorComp.numberClick(7)">7</button>
+        <button class="btn btn-default" ng-click="calculatorComp.numberClick(8)">8</button>
+        <button class="btn btn-default" ng-click="calculatorComp.numberClick(9)">9</button>
+        <button class="btn btn-primary" ng-click="calculatorComp.operatorClicked('/')" ng-class="{'selected': calculatorComp.operator=='/' }">&divide;</button>
+        <button class="btn btn-primary" ng-click="calculatorComp.operatorClicked('*')" ng-class="{'selected': calculatorComp.operator=='*' }">&times;</button>
+      </div>
+      <div class="row text-center">
+        <button class="btn btn-default" ng-click="calculatorComp.numberClick(4)">4</button>
+        <button class="btn btn-default" ng-click="calculatorComp.numberClick(5)">5</button>
+        <button class="btn btn-default" ng-click="calculatorComp.numberClick(6)">6</button>
+        <button class="btn btn-primary" ng-click="calculatorComp.operatorClicked('+')" ng-class="{'selected': calculatorComp.operator=='+' }">&plus;</button>
+        <button class="btn btn-primary" ng-click="calculatorComp.operatorClicked('-')" ng-class="{'selected': calculatorComp.operator=='-' }">&minus;</button>
+      </div>
+      <div class="row text-center">
+        <button class="btn btn-default" ng-click="calculatorComp.numberClick(1)">1</button>
+        <button class="btn btn-default" ng-click="calculatorComp.numberClick(2)">2</button>
+        <button class="btn btn-default" ng-click="calculatorComp.numberClick(3)">3</button>
+        <button class="btn btn-success" ng-click="calculatorComp.calculate()">&equals;</button>
+        <button class="btn btn-danger" ng-click="calculatorComp.clear()">c</button>
+      </div>
+      <div class="row text-center">
+        <button class="btn btn-default"></button>
+        <button class="btn btn-default" ng-click="calculatorComp.numberClick(0)">0</button>
+        <button class="btn btn-default"></button>
+        <button class="btn btn-default"></button>
+        <button class="btn btn-default"></button>
+      </div>
+    </div>
+  </div>
+</div>

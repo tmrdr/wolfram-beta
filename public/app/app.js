@@ -39,6 +39,10 @@ angular.module('App', ['ui.router'])
       url: '/reverseStr',
       component: 'reverseStrComp'
     })
+    .state('calculatorState', {
+      url: '/calculator',
+      component: 'calculatorComp'
+    })
 
     $locationProvider.html5Mode(true);
 

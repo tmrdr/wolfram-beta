@@ -30,7 +30,8 @@ function DataServices(){
       "smallestInt",
       "factorialize",
       "mergeTwoSorted",
-      "reverseStr"
+      "reverseStr",
+      "calculator"
     ]
 
   }
