@@ -7,6 +7,13 @@ angular.module('App')
 
 function NavbarCompCtrl(){
   var navbarComp = this;
+
+  navbarComp.functions = [
+    "findSum",
+    "largestNumber",
+    "smallestNumber",
+    "factorialize"
+  ]
 }
 
 NavbarCompCtrl.$inject = [];

@@ -13,10 +13,7 @@
 
     <div class="collapse navbar-collapse" id="navbar-collapse-div" data-toggle="collapse" data-target="#navbar-collapse-div">
       <ul class="nav navbar-nav">
-        <li ui-sref-active="active"><a ui-sref="findSumState()">findSum</a></li>
-        <li ui-sref-active="active"><a ui-sref="largestNumberState()">largestNumber</a></li>
-        <li ui-sref-active="active"><a ui-sref="smallestNumberState()">smallestNumber</a></li>
-        <li ui-sref-active="active"><a ui-sref="factorializeState()">factorialize</a></li>
+        <li ng-repeat="function in navbarComp.functions" ui-sref-active="active"><a ui-sref="{{function}}State()">{{function}}</a></li>
       </ul>
     </div>
 
