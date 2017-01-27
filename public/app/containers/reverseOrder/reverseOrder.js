@@ -6,6 +6,7 @@ angular.module('App')
 });
 
 function ReverseOrderCompCtrl(){
+  $("input").focus();
 
   var reverseOrderComp = this;
   reverseOrderComp.input = "hello world";

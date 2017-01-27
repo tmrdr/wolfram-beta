@@ -4,7 +4,7 @@
 <form ng-submit="factorializeComp.calculate()">
   <div class="form-group">
     <label for="input">Enter an integer to factorialize:</label>
-    <input class="form-control" type="number" name="input" ng-model="factorializeComp.input" ng-change="factorializeComp.calculate()"/>
+    <input id="input" class="form-control" type="number" name="input" ng-model="factorializeComp.input" ng-change="factorializeComp.calculate()" autofocus/>
   </div>
 </form>
 

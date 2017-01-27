@@ -6,6 +6,7 @@ angular.module('App')
 });
 
 function FindSumCompCtrl(DataServices){
+  $("input").focus();
 
   var findSumComp = this;
 

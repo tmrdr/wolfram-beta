@@ -6,6 +6,7 @@ angular.module('App')
 });
 
 function largestIntCompCtrl(DataServices){
+  $("input").focus();
 
   var largestIntComp = this;
 
@@ -26,7 +27,7 @@ function largestIntCompCtrl(DataServices){
 
     largestIntComp.sum = largestInt(DataServices.stringToArray(largestIntComp.input));
   }
-  
+
   largestIntComp.calculate();
 
 }

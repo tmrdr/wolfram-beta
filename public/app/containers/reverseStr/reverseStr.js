@@ -6,6 +6,7 @@ angular.module('App')
 });
 
 function ReverseStrCompCtrl(){
+  $("input").focus();
 
   var reverseStrComp = this;
   reverseStrComp.input = "hello world";

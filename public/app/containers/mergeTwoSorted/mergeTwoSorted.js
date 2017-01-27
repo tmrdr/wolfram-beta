@@ -6,6 +6,7 @@ angular.module('App')
 })
 
 function MergeTwoSortedCompCtrl(DataServices){
+  $("input")[0].focus();
   var mergeTwoSortedComp = this;
 
   mergeTwoSortedComp.input1 = "1 3 5 7 9";

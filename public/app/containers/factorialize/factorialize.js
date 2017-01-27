@@ -6,6 +6,7 @@ angular.module('App')
 });
 
 function FactorializeCompCtrl(){
+  $("input").focus();
 
   var factorializeComp = this;
   factorializeComp.input = 7;

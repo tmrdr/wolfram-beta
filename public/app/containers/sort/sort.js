@@ -6,6 +6,7 @@ angular.module('App')
 });
 
 function SortCompCtrl(){
+  $("input").focus();
 
   var sortComp = this;
   sortComp.input = "9 1 5 2 8";

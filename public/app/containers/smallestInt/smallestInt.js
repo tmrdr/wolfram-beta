@@ -6,6 +6,7 @@ angular.module('App')
 });
 
 function smallestIntCompCtrl(){
+  $("input").focus();
 
   var smallestIntComp = this;
   smallestIntComp.input = "3 5 7 9";
