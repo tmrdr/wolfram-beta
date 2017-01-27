@@ -1,3 +1,5 @@
-<div ng-repeat="fx in sidenavComp.functions.sort()" ui-sref-active="active">
-  <a ui-sref="{{fx}}State()">{{fx}}</a>
-</div>
+<ul class="list-group">
+  <li ng-repeat="fx in sidenavComp.functions.sort()" ui-sref-active="active" class="list-group-item">
+    <a ui-sref="{{fx}}State()">{{fx}}</a>
+  </li>
+</ul>

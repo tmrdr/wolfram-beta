@@ -39,3 +39,21 @@ body{
   background-color: lightgrey;
   color: orange;
 }
+
+.sidenav{
+  margin-top: 25px;
+}
+
+.sidenav .list-group a{
+  color: black;
+}
+
+.sidenav .list-group .active a{
+  color: white;
+}
+
+@media (max-width: 768px){
+  .sidenav{
+    display: none;
+  }
+}
