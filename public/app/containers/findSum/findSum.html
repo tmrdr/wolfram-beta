@@ -1,2 +1,9 @@
 <h1>findSum</h1>
 <h2>{{findSumComp.phrase}}</h2>
+Space delimited list of numbers:
+<form ng-submit="findSumComp.calculate()">
+  <input ng-model="findSumComp.input"/>
+  <input type="submit"/>
+</form>
+
+{{findSumComp.sum}}
