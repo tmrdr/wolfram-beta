@@ -42,4 +42,4 @@ function LargestNumberCompCtrl(){
 }
 
 
-FindSumCompCtrl.$inject = [];
+LargestNumberCompCtrl.$inject = [];

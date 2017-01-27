@@ -1,0 +1,12 @@
+<h1>Factorialize</h1>
+
+
+<form ng-submit="factorializeComp.calculate()">
+  <div class="form-group">
+    <label for="input">Enter number to factorialize:</label>
+    <input class="form-control" name="input" ng-model="factorializeComp.input" ng-change="factorializeComp.calculate()"/>
+  </div>
+  <input class="btn btn-success" type="submit"/>
+</form>
+
+<h2 ng-show="factorializeComp.sum">Sum: {{factorializeComp.sum}}</h2>
