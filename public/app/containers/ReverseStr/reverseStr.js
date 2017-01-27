@@ -5,16 +5,16 @@ angular.module('App')
   controllerAs: 'reverseStrComp'
 });
 
-function reverseStrCompCtrl(){
+function ReverseStrCompCtrl(){
 
   var reverseStrComp = this;
   reverseStrComp.phrase = "Reversing the string";
-  largestNumberComp.input = "";
+  reverseStrComp.input = "hello";
 
-  largestNumberComp.calculate = function(){
+  reverseStrComp.calculate = function(){
     console.log("hello");
 
-    function reverseString(str) {
+    function reverseStr(str) {
       var str = str.split('').reverse().join('');
       return str;
     }
@@ -26,4 +26,4 @@ function reverseStrCompCtrl(){
 }
 
 
-reverseStrCompCtrl.$inject = [];
+ReverseStrCompCtrl.$inject = [];

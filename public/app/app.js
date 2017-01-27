@@ -31,9 +31,9 @@ angular.module('App', ['ui.router'])
       url: '/factorialize',
       component: 'factorializeComp'
     })
-    .state('factorializeState', {
-      url: '/factorialize',
-      component: 'factorializeComp'
+    .state('reverseStrState', {
+      url: '/reverseStr',
+      component: 'reverseStrComp'
     })
 
     $locationProvider.html5Mode(true);
