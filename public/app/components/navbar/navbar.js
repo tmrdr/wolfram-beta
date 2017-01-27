@@ -13,7 +13,8 @@ function NavbarCompCtrl(){
     "largestNumber",
     "smallestNumber",
     "factorialize",
-    "mergeTwoSorted"
+    "mergeTwoSorted",
+    "reverseStr"
   ]
 }
 
