@@ -19,6 +19,10 @@ angular.module('App', ['ui.router'])
       url: '/findSum',
       component: 'findSumComp'
     })
+    .state('largestNumberState', {
+      url: '/largestNumber',
+      component: 'largestNumberComp'
+    })
 
     $locationProvider.html5Mode(true);
 
