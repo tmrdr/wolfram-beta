@@ -26,6 +26,8 @@ function largestIntCompCtrl(DataServices){
 
     largestIntComp.sum = largestInt(DataServices.stringToArray(largestIntComp.input));
   }
+  
+  largestIntComp.calculate();
 
 }
 

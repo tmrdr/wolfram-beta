@@ -47,6 +47,8 @@ function MergeTwoSortedCompCtrl(DataServices){
     mergeTwoSortedComp.answer = merge(a1, a2);
   }
 
+  mergeTwoSortedComp.calculate();
+
 }
 
 MergeTwoSortedCompCtrl.$inject = ['DataServices'];

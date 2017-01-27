@@ -8,7 +8,7 @@ angular.module('App')
 function FactorializeCompCtrl(){
 
   var factorializeComp = this;
-  factorializeComp.input = "7";
+  factorializeComp.input = 7;
   factorializeComp.sum = null;
 
   factorializeComp.calculate = function(){
@@ -32,6 +32,8 @@ function FactorializeCompCtrl(){
 
     factorializeComp.sum = factorialize(factorializeComp.input);
   }
+
+  factorializeComp.calculate();
 
 }
 

@@ -41,6 +41,8 @@ function smallestIntCompCtrl(){
     smallestIntComp.answer = smallestInt(newArray);
   }
 
+  smallestIntComp.calculate();
+
 }
 
 

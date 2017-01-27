@@ -24,6 +24,7 @@ function ReverseStrCompCtrl(){
     reverseStrComp.str = reverseStr(str);
   }
 
+  reverseStrComp.calculate();
 }
 
 ReverseStrCompCtrl.$inject = [];

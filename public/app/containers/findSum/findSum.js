@@ -25,6 +25,8 @@ function FindSumCompCtrl(DataServices){
     findSumComp.sum = addAll(DataServices.stringToArray(findSumComp.input));
   }
 
+  findSumComp.calculate();
+
 }
 
 
