@@ -60,6 +60,19 @@ body{
   }
 }
 
+.footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #EEE;
+  color: white;
+  padding: 5px;
+}
+
+
+
+
+
 /*calculator*/
 .my-calc .row{
   padding-bottom: 5px;
