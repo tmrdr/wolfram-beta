@@ -39,6 +39,10 @@ angular.module('App', ['ui.router'])
       url: '/reverseStr',
       component: 'reverseStrComp'
     })
+    .state('reverseOrderState', {
+      url: '/reverseOrder',
+      component: 'reverseOrderComp'
+    })
 
     $locationProvider.html5Mode(true);
 
