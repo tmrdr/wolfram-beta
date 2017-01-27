@@ -44,6 +44,16 @@ body{
   margin-top: 25px;
 }
 
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:active, .list-group-item.active:hover{
+  background-color: darkgrey;
+  border-color: darkgrey;
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:active, .dropdown-menu>.active>a:hover{
+  background-color: darkgrey;
+  border-color: darkgrey;
+}
+
 @media (max-width: 768px){
   .sidenav{
     display: none;
@@ -66,4 +76,18 @@ body{
 
 .selected{
   border: 3px solid black;
+}
+
+.primary-calc{
+  background-color: orange;
+  border-color: orange;
+}
+
+.primary-equals{
+  background-color: darkgrey;
+  border-color: darkgrey;
+}
+
+.btn.disabled, .btn.disabled:hover{
+  background-color: lightgrey;
 }
