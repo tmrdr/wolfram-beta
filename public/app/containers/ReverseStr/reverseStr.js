@@ -11,13 +11,15 @@ function ReverseStrCompCtrl(){
   reverseStrComp.phrase = "Reversing the string";
   reverseStrComp.input = "hello";
 
+
   reverseStrComp.calculate = function(){
     console.log("hello");
+    var str = reverseStrComp.input;
 
     function reverseStr(str) {
       var str = str.split('').reverse().join('');
       return str;
-    }
+    };
 
 
     reverseStrComp.str = reverseStr(str);
