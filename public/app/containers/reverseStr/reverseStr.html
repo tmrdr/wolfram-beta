@@ -1,0 +1,11 @@
+<h2>Reverse a String</h2>
+<br />
+
+<form ng-submit="reverseStrComp.calculate()">
+  <div class="form-group">
+    <label for="input">Enter a string:</label>
+    <input class="form-control" name="input" ng-model="reverseStrComp.input" ng-change="reverseStrComp.calculate()"/>
+  </div>
+</form>
+
+<h3 ng-show="reverseStrComp.str">Reversed string: <span class="answer">{{reverseStrComp.str}}</span></h3>
