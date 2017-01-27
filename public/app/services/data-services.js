@@ -8,7 +8,6 @@ function DataServices(){
     str = str.replace(/\]/g," ");
     str = str.replace(/\,/g," ");
 
-    console.log(str)
     var array = str.split(" ").map(function(item){
       return parseInt(item);
     })
