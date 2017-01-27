@@ -1,9 +1,12 @@
-<h1>Find Largest Number</h1>
-<h2>{{largestNumberComp.phrase}}</h2>
-Space delimited list of numbers:
+<h1>find largest number</h1>
+
+
 <form ng-submit="largestNumberComp.calculate()">
-  <input ng-model="largestNumberComp.input"/>
-  <input type="submit"/>
+  <div class="form-group">
+    <label for="input">Space delimited list of numbers:</label>
+    <input class="form-control" name="input" ng-model="largestNumberComp.input" ng-change="largestNumberComp.calculate()"/>
+  </div>
+  <input class="btn btn-success" type="submit"/>
 </form>
 
-{{largestNumberComp.sum}}
+<h2 ng-show="largestNumberComp.sum">Largest number: {{largestNumberComp.sum}}</h2>
