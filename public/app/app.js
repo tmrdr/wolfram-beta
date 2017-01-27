@@ -31,6 +31,10 @@ angular.module('App', ['ui.router'])
       url: '/factorialize',
       component: 'factorializeComp'
     })
+    .state('mergeTwoSortedState', {
+      url: '/mergeTwoSorted',
+      component: 'mergeTwoSortedComp'
+    })
 
     $locationProvider.html5Mode(true);
 

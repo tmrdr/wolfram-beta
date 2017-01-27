@@ -12,7 +12,8 @@ function NavbarCompCtrl(){
     "findSum",
     "largestNumber",
     "smallestNumber",
-    "factorialize"
+    "factorialize",
+    "mergeTwoSorted"
   ]
 }
 
