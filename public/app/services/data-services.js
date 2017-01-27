@@ -31,7 +31,9 @@ function DataServices(){
       "factorialize",
       "mergeTwoSorted",
       "reverseStr",
-      "calculator"
+      "calculator",
+      "reverseOrder",
+      "sort"
     ]
 
   }

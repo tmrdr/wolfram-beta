@@ -42,7 +42,13 @@ angular.module('App', ['ui.router'])
     .state('calculatorState', {
       url: '/calculator',
       component: 'calculatorComp'
+    .state('reverseOrderState', {
+      url: '/reverseOrder',
+      component: 'reverseOrderComp'
     })
+    .state('sortState', {
+      url: '/sort',
+      component: 'sortComp'
 
     $locationProvider.html5Mode(true);
 
