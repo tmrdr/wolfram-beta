@@ -7,12 +7,12 @@ body{
 }
 
 .navbar .navbar-brand{
-  color: white;
+  color: orange;
   font-weight: bold;
 }
 
-.navbar .navbar-brand .orange{
-  color: orange;
+.navbar .navbar-brand .white{
+  color: white;
 }
 
 .navbar-header{
@@ -42,14 +42,6 @@ body{
 
 .sidenav{
   margin-top: 25px;
-}
-
-.sidenav .list-group a{
-  color: black;
-}
-
-.sidenav .list-group .active a{
-  color: white;
 }
 
 @media (max-width: 768px){

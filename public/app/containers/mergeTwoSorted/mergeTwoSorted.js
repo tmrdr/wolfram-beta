@@ -8,8 +8,8 @@ angular.module('App')
 function MergeTwoSortedCompCtrl(DataServices){
   var mergeTwoSortedComp = this;
 
-  mergeTwoSortedComp.input1 = null;
-  mergeTwoSortedComp.input2 = null;
+  mergeTwoSortedComp.input1 = "1 3 5 7 9";
+  mergeTwoSortedComp.input2 = "2 4 6 8 10";
   mergeTwoSortedComp.answer = null;
 
   mergeTwoSortedComp.calculate = function(){

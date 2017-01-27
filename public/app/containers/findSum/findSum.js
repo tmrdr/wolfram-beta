@@ -9,7 +9,7 @@ function FindSumCompCtrl(DataServices){
 
   var findSumComp = this;
 
-  findSumComp.input = null;
+  findSumComp.input = "98 28 1 73 17";
   findSumComp.sum = null;
 
   findSumComp.calculate = function(){

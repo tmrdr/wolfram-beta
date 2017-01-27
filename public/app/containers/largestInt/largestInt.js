@@ -9,7 +9,7 @@ function largestIntCompCtrl(DataServices){
 
   var largestIntComp = this;
 
-  largestIntComp.input = null;
+  largestIntComp.input = "4 19 29 0 35";
   largestIntComp.sum = null;
 
   largestIntComp.calculate = function(){

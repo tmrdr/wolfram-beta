@@ -8,7 +8,7 @@ angular.module('App')
 function smallestIntCompCtrl(){
 
   var smallestIntComp = this;
-  smallestIntComp.input = null;
+  smallestIntComp.input = "3 5 7 9";
   smallestIntComp.answer = null;
 
   smallestIntComp.calculate = function(){
