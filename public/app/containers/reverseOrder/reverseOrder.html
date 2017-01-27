@@ -1,0 +1,11 @@
+<h2>Reverse Order of Words in a String</h2>
+<br />
+
+<form ng-submit="reverseOrderComp.calculate()">
+  <div class="form-group">
+    <label for="input">Enter a string:</label>
+    <input class="form-control" name="input" ng-model="reverseOrderComp.input" ng-change="reverseOrderComp.calculate()"/>
+  </div>
+</form>
+
+<h3 ng-show="reverseOrderComp.str">Reversed string: <span class="answer">{{reverseOrderComp.str}}</span></h3>
