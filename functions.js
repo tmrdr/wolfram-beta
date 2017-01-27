@@ -1,18 +1,3 @@
-
-
-
-// return the smallest number in an array
-function smallestNumber(array){
-  var smallest = array[0];
-  for (i = 0; i < array.length; i++){
-    if (array[i] < smallest){
-      smallest = array[i];
-    }
-  }
-  return smallest;
-};
-
-
 // factorialize a number.
 function factorialize(num) {
 var array = [];

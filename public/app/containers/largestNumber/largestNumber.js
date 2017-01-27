@@ -8,7 +8,6 @@ angular.module('App')
 function LargestNumberCompCtrl(){
 
   var largestNumberComp = this;
-  largestNumberComp.phrase = "finding the largest number";
   largestNumberComp.input = " 1 4 5 6 7 8 ";
 
   largestNumberComp.calculate = function(){

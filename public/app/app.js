@@ -23,6 +23,10 @@ angular.module('App', ['ui.router'])
       url: '/largestNumber',
       component: 'largestNumberComp'
     })
+    .state('smallestNumberState', {
+      url: '/smallestNumber',
+      component: 'smallestNumberComp'
+    })
     .state('factorializeState', {
       url: '/factorialize',
       component: 'factorializeComp'
