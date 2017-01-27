@@ -1,0 +1,11 @@
+<h2>Sort Words or Numbers</h2>
+<br />
+
+<form ng-submit="sortComp.calculate()">
+  <div class="form-group">
+    <label for="input">Space delimited list of integers or string:</label>
+    <input class="form-control" name="input" ng-model="sortComp.input" ng-change="sortComp.calculate()"/>
+  </div>
+</form>
+
+<h3 ng-show="sortComp.answer">Sorted List: <span class="answer">{{sortComp.answer}}</span></h3>
