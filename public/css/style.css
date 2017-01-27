@@ -1,3 +1,35 @@
 body{
   padding-top: 60px;
 }
+
+.container{
+  max-width: 600px;
+}
+
+.navbar .navbar-brand{
+  color: white;
+  font-weight: bold;
+}
+
+.navbar .navbar-brand .orange{
+  color: orange;
+}
+
+.navbar-header{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar-header .function-dropdown{
+  position: absolute;
+  right: 0;
+}
+
+#fx-dropdown{
+  color: orange;
+  font-size: 14px;
+}
+
+.answer{
+  color: orange;
+}

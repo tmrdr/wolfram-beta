@@ -2,19 +2,18 @@
   <div class="container-fluid">
 
     <div class="navbar-header">
-      <a class="navbar-brand" ui-sref-active="active" ui-sref="homeState()">do stuff</a>
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-div" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
+      <a class="navbar-brand" ui-sref-active="active" ui-sref="homeState()">wolfram|beta</a>
+      <div class="function-dropdown">
+        <a id="fx-dropdown" class="navbar-brand dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          f(x) <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu pull-right">
+          <li ng-repeat="fx in navbarComp.functions.sort()" ui-sref-active="active">
+            <a ui-sref="{{fx}}State()">{{fx}}</a>
+          </li>
+        </ul>
+      </div>
 
-    <div class="collapse navbar-collapse" id="navbar-collapse-div" data-toggle="collapse" data-target="#navbar-collapse-div">
-      <ul class="nav navbar-nav">
-        <li ng-repeat="function in navbarComp.functions" ui-sref-active="active"><a ui-sref="{{function}}State()">{{function}}</a></li>
-      </ul>
     </div>
 
   </div>

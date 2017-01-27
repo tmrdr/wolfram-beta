@@ -8,8 +8,8 @@ angular.module('App')
 function ReverseStrCompCtrl(){
 
   var reverseStrComp = this;
-  reverseStrComp.phrase = "Reversing the string";
-  reverseStrComp.input = "hello";
+  reverseStrComp.input = null;
+  reverseStrComp.str = null;
 
 
   reverseStrComp.calculate = function(){

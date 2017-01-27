@@ -7,7 +7,6 @@ angular.module('App')
 
 function HomeCompCtrl(){
   var homeComp = this;
-  homeComp.phrase = "hello WDI11";
 }
 
 HomeCompCtrl.$inject = [];
