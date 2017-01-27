@@ -19,13 +19,13 @@ angular.module('App', ['ui.router'])
       url: '/findSum',
       component: 'findSumComp'
     })
-    .state('largestNumberState', {
-      url: '/largestNumber',
-      component: 'largestNumberComp'
+    .state('largestIntState', {
+      url: '/largestInt',
+      component: 'largestIntComp'
     })
-    .state('smallestNumberState', {
-      url: '/smallestNumber',
-      component: 'smallestNumberComp'
+    .state('smallestIntState', {
+      url: '/smallestInt',
+      component: 'smallestIntComp'
     })
     .state('factorializeState', {
       url: '/factorialize',

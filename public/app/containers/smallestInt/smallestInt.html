@@ -1,0 +1,11 @@
+<h2>Find Smallest Integer</h2>
+<br />
+
+<form ng-submit="smallestIntComp.calculate()">
+  <div class="form-group">
+    <label for="input">Space delimited list of integer:</label>
+    <input class="form-control" name="input" ng-model="smallestIntComp.input" ng-change="smallestIntComp.calculate()"/>
+  </div>
+</form>
+
+<h3 ng-show="smallestIntComp.answer">Smallest integer: <span class="answer">{{smallestIntComp.answer}}</span></h3>

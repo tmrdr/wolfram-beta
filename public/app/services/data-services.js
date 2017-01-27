@@ -4,7 +4,7 @@ angular.module('App')
 function DataServices(){
 
   this.stringToArray = function(str){
-    
+
     var array = str.split(" ").map(function(item){
       return parseInt(item);
     })
@@ -20,6 +20,19 @@ function DataServices(){
     })
 
     return newArray;
+  }
+
+  this.arrayOfFunctions = function(){
+
+    return [
+      "findSum",
+      "largestInt",
+      "smallestInt",
+      "factorialize",
+      "mergeTwoSorted",
+      "reverseStr"
+    ]
+
   }
 
 

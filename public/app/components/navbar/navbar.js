@@ -5,17 +5,10 @@ angular.module('App')
   controllerAs: 'navbarComp'
 });
 
-function NavbarCompCtrl(){
+function NavbarCompCtrl(DataServices){
   var navbarComp = this;
 
-  navbarComp.functions = [
-    "findSum",
-    "largestNumber",
-    "smallestNumber",
-    "factorialize",
-    "mergeTwoSorted",
-    "reverseStr"
-  ]
+  navbarComp.functions = DataServices.arrayOfFunctions();
 }
 
-NavbarCompCtrl.$inject = [];
+NavbarCompCtrl.$inject = ['DataServices'];

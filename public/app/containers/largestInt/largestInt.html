@@ -1,0 +1,11 @@
+<h2>Find Largest Integer</h2>
+<br />
+
+<form ng-submit="largestIntComp.calculate()">
+  <div class="form-group">
+    <label for="input">Space delimited list of integers:</label>
+    <input class="form-control" name="input" ng-model="largestIntComp.input" ng-change="largestIntComp.calculate()"/>
+  </div>
+</form>
+
+<h3 ng-show="largestIntComp.sum">Largest integer: <span class="answer">{{largestIntComp.sum}}</span></h3>
