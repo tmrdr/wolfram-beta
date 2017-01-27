@@ -1,11 +1,11 @@
 <h2>Find Sum</h2>
+<br />
 
 <form ng-submit="findSumComp.calculate()">
   <div class="form-group">
     <label for="input">Space delimited list of numbers:</label>
     <input class="form-control" name="input" ng-model="findSumComp.input" ng-change="findSumComp.calculate()"/>
   </div>
-  <input class="btn btn-success" type="submit"/>
 </form>
 
 <h3 ng-show="findSumComp.sum">Sum: <span class="answer">{{findSumComp.sum}}</span></h3>

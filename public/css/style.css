@@ -33,3 +33,8 @@ body{
 .answer{
   color: orange;
 }
+
+.code{
+  background-color: lightgrey;
+  color: grey;
+}

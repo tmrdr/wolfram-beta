@@ -1,4 +1,5 @@
 <h2>Merge Two Sorted Arrays</h2>
+<br />
 
 <form ng-submit="mergeTwoSortedComp.calculate()">
   <div class="form-group">
@@ -9,7 +10,6 @@
     <label for="input">Space delimited list of sorted numbers:</label>
     <input class="form-control" name="input" ng-model="mergeTwoSortedComp.input2" ng-change="mergeTwoSortedComp.calculate()"/>
   </div>
-  <input class="btn btn-success" type="submit"/>
 </form>
 
 <h3 ng-show="mergeTwoSortedComp.answer">Merged, sorted array: <span class="answer">{{mergeTwoSortedComp.answer}}</span></h3>
