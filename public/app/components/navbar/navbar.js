@@ -2,5 +2,11 @@ angular.module('App')
 .component('navbarComp', {
   templateUrl: 'app/components/navbar/navbar.html',
   controller: NavbarCompCtrl,
-  controllerAs: 'navbarCompCtrl'
-})
+  controllerAs: 'navbarComp'
+});
+
+function NavbarCompCtrl(){
+  var navbarComp = this;
+}
+
+NavbarCompCtrl.$inject = [];

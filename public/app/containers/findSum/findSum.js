@@ -8,15 +8,18 @@ angular.module('App')
 function FindSumCompCtrl(){
 
   var findSumComp = this;
+
   findSumComp.input = null;
   findSumComp.sum = null;
 
   findSumComp.calculate = function(){
-    console.log("hello");
+
     var array = findSumComp.input.split(" ").map(function(item){
       return parseInt(item);
     })
+
     var newArray = [];
+
     array.forEach(function(item){
       if(isNaN(item)){
         //do nothing
