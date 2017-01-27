@@ -5,7 +5,7 @@ angular.module('App')
   controllerAs: 'mergeTwoSortedComp'
 })
 
-function MergeTwoSortedCompCtrl(){
+function MergeTwoSortedCompCtrl(DataServices){
   var mergeTwoSortedComp = this;
 
   mergeTwoSortedComp.input1 = null;
@@ -14,29 +14,8 @@ function MergeTwoSortedCompCtrl(){
 
   mergeTwoSortedComp.calculate = function(){
 
-    var array = mergeTwoSortedComp.input1.split(" ").map(function(item){
-      return parseInt(item);
-    })
-    var a1 = [];
-    array.forEach(function(item){
-      if(isNaN(item)){
-        //do nothing
-      } else{
-        a1.push(item);
-      }
-    })
-
-    array = mergeTwoSortedComp.input2.split(" ").map(function(item){
-      return parseInt(item);
-    })
-    var a2 = [];
-    array.forEach(function(item){
-      if(isNaN(item)){
-        //do nothing
-      } else{
-        a2.push(item);
-      }
-    })
+    var a1 = DataServices.stringToArray(mergeTwoSortedComp.input1);
+    var a2 = DataServices.stringToArray(mergeTwoSortedComp.input2);
 
     // merge and sort two arrays seperated by comma
     function merge(a1, a2) {
@@ -70,4 +49,4 @@ function MergeTwoSortedCompCtrl(){
 
 }
 
-MergeTwoSortedCompCtrl.$inject = [];
+MergeTwoSortedCompCtrl.$inject = ['DataServices'];

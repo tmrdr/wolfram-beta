@@ -5,25 +5,14 @@ angular.module('App')
   controllerAs: 'largestNumberComp'
 });
 
-function LargestNumberCompCtrl(){
+function LargestNumberCompCtrl(DataServices){
 
   var largestNumberComp = this;
+
   largestNumberComp.input = null;
   largestNumberComp.sum = null;
 
   largestNumberComp.calculate = function(){
-    console.log("hello");
-    var array = largestNumberComp.input.split(" ").map(function(item){
-      return parseInt(item);
-    })
-    var newArray = [];
-    array.forEach(function(item){
-      if(isNaN(item)){
-        //do nothing
-      } else{
-        newArray.push(item);
-      }
-    })
 
     function largestNumber(array){
       var largest = array[0];
@@ -35,11 +24,10 @@ function LargestNumberCompCtrl(){
       return largest;
     };
 
-
-    largestNumberComp.sum = largestNumber(newArray);
+    largestNumberComp.sum = largestNumber(DataServices.stringToArray(largestNumberComp.input));
   }
 
 }
 
 
-LargestNumberCompCtrl.$inject = [];
+LargestNumberCompCtrl.$inject = ['DataServices'];

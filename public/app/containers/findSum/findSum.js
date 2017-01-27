@@ -5,7 +5,7 @@ angular.module('App')
   controllerAs: 'findSumComp'
 });
 
-function FindSumCompCtrl(){
+function FindSumCompCtrl(DataServices){
 
   var findSumComp = this;
 
@@ -13,20 +13,6 @@ function FindSumCompCtrl(){
   findSumComp.sum = null;
 
   findSumComp.calculate = function(){
-
-    var array = findSumComp.input.split(" ").map(function(item){
-      return parseInt(item);
-    })
-
-    var newArray = [];
-
-    array.forEach(function(item){
-      if(isNaN(item)){
-        //do nothing
-      } else{
-        newArray.push(item);
-      }
-    })
 
     function addAll(array){
       var sum = null;
@@ -36,11 +22,10 @@ function FindSumCompCtrl(){
       return sum;
     };
 
-
-    findSumComp.sum = addAll(newArray);
+    findSumComp.sum = addAll(DataServices.stringToArray(findSumComp.input));
   }
 
 }
 
 
-FindSumCompCtrl.$inject = [];
+FindSumCompCtrl.$inject = ['DataServices'];

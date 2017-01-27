@@ -13,7 +13,6 @@ function ReverseStrCompCtrl(){
 
 
   reverseStrComp.calculate = function(){
-    console.log("hello");
     var str = reverseStrComp.input;
 
     function reverseStr(str) {
@@ -26,6 +25,5 @@ function ReverseStrCompCtrl(){
   }
 
 }
-
 
 ReverseStrCompCtrl.$inject = [];

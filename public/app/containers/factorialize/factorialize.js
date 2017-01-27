@@ -12,18 +12,6 @@ function FactorializeCompCtrl(){
   factorializeComp.sum = null;
 
   factorializeComp.calculate = function(){
-    console.log("hello");
-    var array = factorializeComp.input.split(" ").map(function(item){
-      return parseInt(item);
-    })
-    var newArray = [];
-    array.forEach(function(item){
-      if(isNaN(item)){
-        //do nothing
-      } else{
-        newArray.push(item);
-      }
-    })
 
     function factorialize(num) {
     var array = [];
@@ -42,8 +30,7 @@ function FactorializeCompCtrl(){
     return sum;
     };
 
-
-    factorializeComp.sum = factorialize(newArray);
+    factorializeComp.sum = factorialize(factorializeComp.input);
   }
 
 }
