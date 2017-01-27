@@ -23,6 +23,10 @@ angular.module('App', ['ui.router'])
       url: '/largestNumber',
       component: 'largestNumberComp'
     })
+    .state('factorializeState', {
+      url: '/factorialize',
+      component: 'factorializeComp'
+    })
 
     $locationProvider.html5Mode(true);
 
