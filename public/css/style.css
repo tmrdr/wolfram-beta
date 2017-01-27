@@ -32,6 +32,9 @@ body{
 
 .answer{
   color: orange;
+  margin-top: -10px;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .code{

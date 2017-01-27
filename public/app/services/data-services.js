@@ -4,9 +4,9 @@ angular.module('App')
 function DataServices(){
 
   this.stringToArray = function(str){
-    str = str.replace(/\[/g,"");
-    str = str.replace(/\]/g,"");
-    str = str.replace(/\,/g,"");
+    str = str.replace(/\[/g," ");
+    str = str.replace(/\]/g," ");
+    str = str.replace(/\,/g," ");
 
     console.log(str)
     var array = str.split(" ").map(function(item){
