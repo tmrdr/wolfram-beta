@@ -1,0 +1,12 @@
+<h1>Reverse a string</h1>
+
+
+<form ng-submit="reverseStrComp.calculate()">
+  <div class="form-group">
+    <label for="input">Enter a string:</label>
+    <input class="form-control" name="input" ng-model="reverseStrComp.input" ng-change="reverseStrComp.calculate()"/>
+  </div>
+  <input class="btn btn-success" type="submit"/>
+</form>
+
+<h2 ng-show="reverseStrComp.sum">Reversed string: {{reverseStrComp.sum}}</h2>

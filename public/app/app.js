@@ -27,6 +27,10 @@ angular.module('App', ['ui.router'])
       url: '/factorialize',
       component: 'factorializeComp'
     })
+    .state('factorializeState', {
+      url: '/factorialize',
+      component: 'factorializeComp'
+    })
 
     $locationProvider.html5Mode(true);
 
